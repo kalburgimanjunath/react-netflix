@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 export default function Card({ title }) {
   const cardData = [
     {
@@ -27,11 +28,12 @@ export default function Card({ title }) {
       <div>
         {/* <h1>{item.title}</h1> */}
         {/* <h2>{item.text}</h2> */}
-        <img src={item.url} width="250" height="250" direction />
+        <Link to="/movie">
+          <img src={item.url} width="250" height="250" />
+        </Link>
       </div>
     );
   };
-  console.log(title);
   return (
     <div>
       <h3>{title}</h3>

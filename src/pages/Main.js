@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
-import { Login, Home, Signup, Dashboard } from './index';
+import { Login, Home, Signup, Dashboard, Movie } from './index';
 export default function Main() {
   return (
     <div>
@@ -17,6 +17,9 @@ export default function Main() {
         </Route>
         <Route path="/dashboard">
           <Dashboard title="Dashboard" />
+        </Route>
+        <Route path="/movie">
+          <Movie title="Movie" />
         </Route>
         <Route path="/">
           <Home title="Home" />
