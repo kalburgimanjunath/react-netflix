@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieDetail from './MovieDetail';
+import Card from '../Card';
 export default function Movie() {
   const movieDetails = {
     title: '',
@@ -14,6 +15,7 @@ export default function Movie() {
   return (
     <div>
       <MovieDetail details={movieDetails} />
+      <Card title="Popular this Week" />
     </div>
   );
 }
